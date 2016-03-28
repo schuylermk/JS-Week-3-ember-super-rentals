@@ -3,5 +3,12 @@
 
 We hope you find exactly what you're looking for in a place to stay.
 
+<ul>
+  {{#each model as |rental-from-template|}}
+     {{rental-tile rental-in-component=rental-from-template}}
+  {{/each}}
+</ul>
+
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
