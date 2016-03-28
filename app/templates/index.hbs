@@ -4,8 +4,8 @@
 We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
-  {{#each model as |rental-from-template|}}
-     {{rental-tile rental-in-component=rental-from-template}}
+  {{#each model as |rental|}}
+     {{rental-tile rental=rental}}
   {{/each}}
 </ul>
 
