@@ -1,4 +1,3 @@
-{{yield}}
 {{#if addNewRental}}
   <h1>New Rental</h1>
     <div>
@@ -28,7 +27,7 @@
           {{input value=image id="image"}}
         </div>
 
-        <button {{action 'save1'}}>Save</button>
+        <button {{action 'saveRental'}}>saveRental</button>
       </form>
     </div>
 {{else}}

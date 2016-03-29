@@ -1,7 +1,7 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('rental', 'Unit | Model | rental', {
-  // Specify the other units that are required for this test.
+moduleForModel('rental', ' | Model | rental', {
+  // Specify the other s that are required for this test.
   needs: []
 });
 
