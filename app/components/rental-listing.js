@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     imageHide() {
       this.set('isImageShowing', false);
     },
-    update() {
+    update(rental, userInput) {
       this.sendAction('update', rental, userInput);
     },
     delete(rental) {
