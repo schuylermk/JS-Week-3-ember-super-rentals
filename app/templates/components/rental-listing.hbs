@@ -1,9 +1,7 @@
-<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}
+<li>{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
   {{#if isImageShowing }}
-    <p><img src="{{rental.image}}" alt="{{rental.type}}" width="500" {{action "imageHide"}}/></p>
-    <!-- <button {{action "imageHide"}}>Hide Image</button> -->
+    <p><img src="{{rental.image}}" alt="{{rental.type}}" width="900" {{action "imageHide"}}/></p>
   {{else}}
     <button {{action "imageShow"}}>Show Image</button>
   {{/if}}
-    <button {{action 'delete' rental}}>Delete</button>
 </li>
